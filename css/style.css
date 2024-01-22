@@ -214,6 +214,10 @@ body img{
  grid-template-columns: auto auto;
  align-items: center;
  padding: 20px;
+ width: 600px;
+ height: 450px;
+ border: 1px solid black;
+
 }
 .grid-mapa{
     display: grid;
@@ -319,29 +323,25 @@ body img{
         flex-flow: wrap;
 
     }
-    .main{
-        display: flex;
-        flex-direction: column;
-        width: 5px;
-        padding: 20px;
-    }
+
     .grid-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .grid-container img{
-        padding: 0px 20px;
+
         display: flex;
-        flex-flow: wrap;
-        width: 380px;
+        width: 350px;
     }
     .grid-uno{
+
         display: flex;
-        flex-flow: wrap;
+
     }
     .grid-dos{
         display: flex;
-        flex-flow: wrap;
+
     }
     .login label{
         display: flex;
@@ -370,10 +370,11 @@ body img{
     .grid-ayuda-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .grid-ayuda-container img{
         display: flex;
-        width: 390px;
+        width: 350px;
     }
     .grid-ayuda1{
         display: flex;
@@ -394,29 +395,41 @@ body img{
 
     /* ESTO SERIA DONDE ESTAMOS*/
     .para-los-parrafos-historia{
+        display: flex;
+        align-items: center;
         font-size: 15px;
     }
     .subtitulos{
         font-size: 20px;
     }
     .donde-estamos{
+        display: flex;
+        flex-flow: wrap;
         font-size: 15px;
+    }
+    .grid-container img{
+        display: flex;
+        width: 350px;
+ 
+    }
+    #grid-container-mapas{
+        display: flex;
+        width: 310px;
+        border-radius: 5px;
     }
     .grid-container-mapas{
         display: flex;
-        padding: 30px;
+        padding: 20px;
     }
     .grid-container-mapas{
-       width: auto;
+       width: 300px;
        display: flex;
-       flex-flow: wrap;
     }
     .grid-mapa{
         display: flex;
-        padding: 10px;
+        padding: 5px;
         text-align: center;
-        font-size: 20px;
-        display: block;
+        font-size: 15px;
 
     }
     /* ESTO SERIA LA PARTE "NOSOTROS"*/
