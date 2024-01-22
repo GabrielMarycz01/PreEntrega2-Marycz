@@ -213,10 +213,6 @@ body img{
  display: grid;
  grid-template-columns: auto auto;
  align-items: center;
- padding: 20px;
- width: 600px;
- height: 450px;
- border: 1px solid black;
 
 }
 .grid-mapa{
@@ -409,14 +405,11 @@ body img{
     }
     .grid-container img{
         display: flex;
+        align-items: center;
         width: 350px;
  
     }
-    #grid-container-mapas{
-        display: flex;
-        width: 310px;
-        border-radius: 5px;
-    }
+
     .grid-container-mapas{
         display: flex;
         padding: 20px;
@@ -435,15 +428,16 @@ body img{
     /* ESTO SERIA LA PARTE "NOSOTROS"*/
     .grid-container-fotos{
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
     .grid-container-fotos img{
-        width: 390px;
+        width: 350px;
     }
     .grid-costado-fotos{
         display: flex;
         text-align: baseline;
-        font-size: 20px;
+        font-size: 15px;
     }
     /* esto seria "SHOP"*/
     .contenedor-cartas{
