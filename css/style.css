@@ -296,7 +296,7 @@ body img{
 
 
 /* Media Queris*/ 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 
     /* Esto SERIA PARA LA PAGINA PRINCIPAL*/
 
@@ -470,8 +470,395 @@ body img{
     }
 
 
-
-
-
     }
-    
+    /*esto es para tablets*/
+    @media (min-width: 501px) and (max-width: 768px){
+        
+        
+        /*  INDEX  */
+
+        .texto{
+            font-size: 20px;
+        }
+        .grid-container img{
+            display: flex;
+            align-items: center;
+            width: 350px;
+        }
+        .grid-uno{
+            display: flex;
+        }
+        .grid-dos{
+            display: flex;
+        }
+
+        /*  AYUDA  */
+
+        .grid-ayuda-container{
+            display: flex;
+            align-items: center;
+        }
+        .grid-ayuda-container img{
+            display: flex;
+            align-items: center;
+            width: 350px;
+        }
+        .grid-ayuda1{
+            display: flex;
+            width: fit-content;
+        }
+
+        .h1-de-ayuda{
+            font-size: 30px;
+        }
+        .parrafo-ayuda{
+            font-size: 15px;
+        }
+        .frase{
+            font-size: 30px;
+        }
+
+        /*  DONDE ESTAMOS  */
+        .para-los-parrafos-historia{
+            font-size: 15px;
+        }
+        .subtitulos{
+            font-size: 20px;
+        }
+        .donde-estamos{
+            font-size: 15px;
+        }
+        .grid-fotos-donde-estamos{
+            display: flex;
+            width: 350px;
+        }
+        .grid-mapa{
+            font-size: 25px;
+        }
+        .grid-container-mapas{
+
+        }
+        /*  NOSOTROS  */
+        .grid-container-fotos img{
+            display: flex;
+            align-items: center;
+            width: 350px;
+        }
+        .grid-container-fotos{
+            font-size: 25px;
+        }
+
+        /*  TIENDA  */
+
+        .card img{
+            display: flex;
+            width: 160px;
+        }
+        .card h5{
+            font-size: 30px;
+        }
+        .card p{
+            font-size: 20px;
+        }
+        .card button{
+            font-size: 20px;
+        }
+    }
+    /*  TABLETS 10 PULGADAS EN ADELANTE  */
+
+    @media (min-width: 769px) and (max-width: 1023px){
+        .texto{
+            font-size: 30px;
+        }
+        .grid-container img{
+            display: flex;
+            align-items: center;
+            width: 460px;
+        }
+        .grid-uno{
+            display: flex;
+        }
+        .grid-dos{
+            display: flex;
+        }
+
+        /*  AYUDA  */
+
+        .grid-ayuda-container{
+            display: flex;
+            align-items: center;
+
+        }
+        .grid-ayuda-container img{
+            display: flex;
+            align-items: center;
+            width: 460px;
+        }
+        .grid-ayuda1{
+            display: flex;
+            align-items: center;
+        }
+        .grid-ayuda2{
+            display: flex;
+            align-items: center;
+        }
+
+        .h1-de-ayuda{
+            font-size: 50px;
+        }
+        .parrafo-ayuda{
+            font-size: 30px;
+        }
+        .frase{
+            font-size: 50px;
+        }
+
+        /*  DONDE ESTAMOS  */
+        .para-los-parrafos-historia{
+            font-size: 15px;
+        }
+        .subtitulos{
+            font-size: 20px;
+        }
+        .donde-estamos{
+            font-size: 15px;
+        }
+        .grid-fotos-donde-estamos{
+            display: flex;
+        }
+        .grid-fotos-donde-estamos img{
+            display: flex;
+            width: 460px;
+        }
+        .grid-mapa{
+            font-size: 25px;
+        }
+        .grid-container-mapas{
+
+        }
+        /*  NOSOTROS  */
+        .grid-container-fotos img{
+            display: flex;
+            align-items: center;
+            width: 460px;
+        }
+        .grid-container-fotos{
+            font-size: 25px;
+        }
+
+        /*  TIENDA  */
+
+        .card img{
+            display: flex;
+            width: 200px;
+        }
+        .card h5{
+            font-size: 30px;
+        }
+        .card p{
+            font-size: 20px;
+        }
+        .card button{
+            font-size: 20px;
+        }
+    }
+    /*  ESTO SERIA PARA TABLETAS MODO HORIZONTAL  */
+    @media (min-width: 1024px) and (max-width: 1200px){
+        .texto{
+            font-size: 30px;
+        }
+        .grid-container img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        .grid-uno{
+            display: flex;
+        }
+        .grid-dos{
+            display: flex;
+        }
+
+        /*  AYUDA  */
+
+        .grid-ayuda-container{
+            display: flex;
+            align-items: center;
+
+        }
+        .grid-ayuda-container img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        .grid-ayuda1{
+            display: flex;
+            align-items: center;
+        }
+        .grid-ayuda2{
+            display: flex;
+            align-items: center;
+        }
+
+        .h1-de-ayuda{
+            font-size: 55px;
+        }
+        .parrafo-ayuda{
+            font-size: 30px;
+        }
+        .frase{
+            font-size: 55px;
+        }
+
+        /*  DONDE ESTAMOS  */
+        .para-los-parrafos-historia{
+            font-size: 25px;
+        }
+        .subtitulos{
+            font-size: 50px;
+        }
+        .donde-estamos{
+            font-size: 15px;
+        }
+        .grid-fotos-donde-estamos{
+            display: flex;
+        }
+        .grid-mapa{
+            font-size: 25px;
+        }
+        .grid-container{
+            display: flex;
+            align-items: center;
+        }
+        .grid-container img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        /*  NOSOTROS  */
+        .grid-container-fotos img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        .grid-container-fotos{
+            font-size: 30px;
+        }
+
+
+        /*  TIENDA  */
+
+        .card img{
+            display: flex;
+            width: 200px;
+        }
+        .card h5{
+            font-size: 30px;
+        }
+        .card p{
+            font-size: 20px;
+        }
+        .card button{
+            font-size: 20px;
+        }
+    }
+    /*  PC  */
+    @media (min-width: 1201px) and (max-width: 1400px){
+        .texto{
+            font-size: 30px;
+        }
+        .grid-container img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        .grid-uno{
+            display: flex;
+        }
+        .grid-dos{
+            display: flex;
+        }
+
+        /*  AYUDA  */
+
+        .grid-ayuda-container{
+            display: flex;
+            align-items: center;
+
+        }
+        .grid-ayuda-container img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        .grid-ayuda1{
+            display: flex;
+            align-items: center;
+        }
+        .grid-ayuda2{
+            display: flex;
+            align-items: center;
+        }
+
+        .h1-de-ayuda{
+            font-size: 55px;
+        }
+        .parrafo-ayuda{
+            font-size: 30px;
+        }
+        .frase{
+            font-size: 55px;
+        }
+
+        /*  DONDE ESTAMOS  */
+        .para-los-parrafos-historia{
+            font-size: 25px;
+        }
+        .subtitulos{
+            font-size: 50px;
+        }
+        .donde-estamos{
+            font-size: 15px;
+        }
+        .grid-fotos-donde-estamos{
+            display: flex;
+        }
+        .grid-mapa{
+            font-size: 25px;
+        }
+        .grid-container{
+            display: flex;
+            align-items: center;
+        }
+        .grid-container img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        /*  NOSOTROS  */
+        .grid-container-fotos img{
+            display: flex;
+            align-items: center;
+            width: 550px;
+        }
+        .grid-container-fotos{
+            font-size: 30px;
+        }
+
+
+        /*  TIENDA  */
+
+        .card img{
+            display: flex;
+            width: 200px;
+        }
+        .card h5{
+            font-size: 30px;
+        }
+        .card p{
+            font-size: 20px;
+        }
+        .card button{
+            font-size: 20px;
+        }
+    }
