@@ -1,0 +1,183 @@
+/* esto seria la pagina principal */
+.texto{
+    font-family: 'Martel', serif;
+    color: #F6F4C2;
+    font-size: 45px;
+    text-align: center;
+}
+
+.grid-container{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    img {
+        width: 918px;
+    }
+    }
+    .grid-uno{
+        padding: 10px;
+        display: flex;
+    }
+    .grid-dos{
+         padding: 10px;
+         display: flex;
+    }  
+
+    /* esto seria la pagina AYUDA */
+
+    .h1-de-ayuda{
+        color: #F6F4C2;
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Martel', serif;
+        text-decoration: underline;
+    }
+    .parrafo-ayuda{
+        color: #F6F4C2;
+        font-family: 'Martel', serif;
+        font-size: 30px;
+    }
+    
+    .frase{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Martel', serif;
+        color: #F6F4C2;
+        text-decoration: underline;
+    }
+
+    .grid-ayuda-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    
+        img{
+            width: 900px;
+        }
+    
+        .grid-ayuda1{
+            padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        }
+    
+        .grid-ayuda2{
+            padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        }
+      }
+
+      .grid-consultas{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 50px;
+        button{
+            padding: 50px;
+        }
+      }
+    
+
+      /* esto seria la seccion Nosotros */ 
+
+      .para-los-parrafos-historia{
+        color: #F6F4C2;
+        font-size: 25px;
+        text-align: center;
+        font-family: 'Martel', serif;
+        display: flex;
+    }
+
+    .grid-container-fotos{
+        color: #F6F4C2;
+        font-size: 30px;
+        text-align: right;
+        font-family: 'Martel', serif;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        padding: 20px;
+        img{
+            width: 800px;
+        }
+    }
+
+    .grid-costado-fotos{
+        display: flex;
+        align-items: center;
+    }
+/* chequear */
+    .parrafo-fotos{
+        color: #F6F4C2;
+        font-size: 30px;
+        text-align: right;
+        font-family: 'Martel', serif;
+        display: flex;
+    }
+
+    /* esto seria la pagina DONDE ESTAMOS */
+
+.seccion-unica{
+    padding: 20px 20px 50px 10px;
+}
+
+.subtitulos{
+    color: #F6F4C2;
+    font-size: 30px;
+    font-family: 'Martel', serif;
+    text-align: left;
+}
+
+.donde-estamos{
+    color: #F6F4C2;
+    font-size: 25px;
+    font-family: 'Martel', serif;
+}
+
+.grid-fotos-donde-estamos{
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.grid-container-mapas{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+   
+   }
+
+   .grid-mapa{
+    display: grid;
+    align-items: flex-end;
+    color: #F6F4C2;
+    font-size: 30px;
+    font-family: 'Martel', serif;
+    text-align: baseline;
+}
+
+/* esto seria para la pagina shop */
+
+.card{
+    img{
+        width: 400px
+    }
+}
+.titulo-tienda1{
+    color: #F6F4C2;
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Martel', serif;
+        text-decoration: underline;
+}
+
+.titulo-tienda{
+    font-size: 25px;
+}

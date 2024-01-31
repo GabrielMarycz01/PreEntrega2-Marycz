@@ -1,0 +1,27 @@
+//BASE
+@import "partials/base/reset";
+@import "partials/base/tipografia";
+
+// UTILITIES 
+@import "partials/utilities/maps";
+@import "partials/utilities/mixins";
+
+//COMPONENTS 
+@import "partials/components/header";
+@import "partials/components/index";
+@import "partials/components/cards";
+@import "partials/components/buttons";
+@import "partials/components/footer";
+
+// MEDIAS QUERIES
+
+@import "partials/media_queries/media_500";
+@import "partials/media_queries/media_600";
+@import "partials/media_queries/media_768";
+@import "partials/media_queries/media_850";
+@import "partials/media_queries/media_1023";
+@import "partials/media_queries/media_1200";
+@import "partials/media_queries/media_1400";
+@import "partials/media_queries/media_1600";
+@import "partials/media_queries/media_2000";
+

@@ -1,0 +1,104 @@
+@media (min-width: 601px) and (max-width: 768px){
+        
+        
+    /*  INDEX  */
+
+    .texto{
+        font-size: 22px;
+    }
+    .grid-container{
+        display: flex;
+        justify-content: space-around;
+        img{
+            display: flex;
+            align-items: center;
+            width: 270px;
+        }
+    }
+     
+    .grid-uno{
+        display: flex;
+        align-items: center;
+    }
+    .grid-dos{
+        display: flex;
+        align-items: center;
+    }
+
+    /*  AYUDA  */
+
+    .grid-ayuda-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .grid-ayuda-container img{
+        display: flex;
+        align-items: center;
+        width: 300px;
+    }
+    .grid-ayuda1{
+        display: flex;
+        width: fit-content;
+    }
+
+    .h1-de-ayuda{
+        font-size: 35px;
+    }
+    .parrafo-ayuda{
+        font-size: 25px;
+    }
+    .frase{
+        font-size: 30px;
+    }
+
+    /*  DONDE ESTAMOS  */
+    .para-los-parrafos-historia{
+        font-size: 15px;
+    }
+    .subtitulos{
+        font-size: 20px;
+    }
+    .donde-estamos{
+        font-size: 15px;
+    }
+    .grid-fotos-donde-estamos{
+        display: flex;
+        width: 350px;
+    }
+    .grid-mapa{
+        font-size: 25px;
+    }
+   
+    /*  NOSOTROS  */
+    .grid-container-fotos img{
+        display: flex;
+        align-items: center;
+        width: 350px;
+    }
+    .grid-container-fotos{
+        font-size: 25px;
+    }
+
+    /*  TIENDA  */
+
+    .contenedor-cartas{
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card img{
+        display: flex;
+        width: 160px;
+    }
+    .card h5{
+        font-size: 30px;
+    }
+    .card p{
+        font-size: 20px;
+    }
+    .card button{
+        font-size: 15px;
+    }
+}

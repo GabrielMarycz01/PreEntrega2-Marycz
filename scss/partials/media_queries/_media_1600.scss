@@ -1,0 +1,125 @@
+@media (min-width: 1401px) and (max-width: 1600px){
+    .texto{
+        font-size: 30px;
+    }
+    .grid-container{
+        img{
+            width: 800px;
+        }
+    }
+    .grid-container{
+        display: flex;
+        justify-content: space-around;
+        img{
+        display: flex;
+        align-items: center;
+    }
+    } 
+    .grid-uno{
+        display: flex;
+    }
+    .grid-dos{
+        display: flex;
+    }
+
+    /*  AYUDA  */
+
+    .grid-ayuda-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    .grid-ayuda-container img{
+        display: flex;
+        align-items: center;
+        width: 650px;
+    }
+    .grid-ayuda1{
+        display: flex;
+        align-items: center;
+    }
+    .grid-ayuda2{
+        display: flex;
+        align-items: center;
+    }
+
+    .h1-de-ayuda{
+        font-size: 35px;
+    }
+    .parrafo-ayuda{
+        font-size: 25px;
+    }
+    .frase{
+        font-size: 35px;
+    }
+
+    /*  DONDE ESTAMOS  */
+    .para-los-parrafos-historia{
+        font-size: 25px;
+    }
+    .subtitulos{
+        font-size: 50px;
+    }
+    .donde-estamos{
+        font-size: 15px;
+    }
+    .grid-fotos-donde-estamos{
+        display: flex;
+    }
+    .grid-mapa{
+        font-size: 25px;
+    }
+    .grid-container{
+        display: flex;
+        align-items: center;
+    }
+    .grid-container img{
+        display: flex;
+        align-items: center;
+        width: 750px;
+    }
+    /*  NOSOTROS  */
+    .grid-container-fotos img{
+        display: flex;
+        align-items: center;
+        width: 550px;
+    }
+    .grid-container-fotos{
+        display: flex;
+        font-size: 30px;
+    }
+
+
+    /*  TIENDA  */
+
+    .contenedor-cartas{
+        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card{
+        padding: 50px;
+        }
+
+    .card img{
+        display: flex;
+        width: 300px;
+        height: 300px;
+        justify-content: center;
+    }
+    .card h5{
+        font-size: 40px;
+        justify-content: center;
+    }
+    .card p{
+        font-size: 30px;
+        justify-content: center;
+    }
+    .card button{
+        width: 200px;
+        font-size: 20px;
+        justify-content: center;
+    }
+}
