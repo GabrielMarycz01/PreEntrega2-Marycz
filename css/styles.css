@@ -9,7 +9,7 @@
 /* FONTS */
 /*  Esto es para la pagina principal  */
 .color-pagina {
-  background-color: #116C9F;
+  background-color: rgb(2, 93, 140);
   font-family: "Martel", serif;
   display: flex;
   flex-flow: row wrap;
@@ -301,6 +301,29 @@ footer {
   color: white;
   font-size: 12px;
   font-family: "Martel", serif;
+}
+
+.navbar1 {
+  padding: 0px 0px 25px 0px;
+}
+.navbar1 .navbar {
+  background-color: rgb(2, 93, 140);
+}
+.navbar1 ul li a {
+  text-decoration: none;
+  color: #F6F4C2;
+  font-size: 20px;
+  font-family: "Courgette", cursive;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.navbar1 a {
+  color: #F6F4C2;
+}
+.navbar1 button {
+  color: #F6F4C2;
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
@@ -1191,7 +1214,8 @@ footer {
 }
 @media (min-width: 1601px) and (max-width: 2000px) {
   .texto {
-    font-size: 30px;
+    padding: 20px;
+    font-size: 35px;
   }
   .grid-container {
     display: flex;

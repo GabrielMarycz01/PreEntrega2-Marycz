@@ -1,6 +1,6 @@
 /*  Esto es para la pagina principal  */
 .color-pagina{
-    background-color: #116C9F;
+    background-color: rgb(2, 93, 140);
     font-family: 'Martel', serif;
     display: flex;
     flex-flow: row wrap;
@@ -45,7 +45,7 @@
 
 a{
     text-decoration: none;
-    color: #F6F4C2;
+    color: map-get($colors, amarillito);
     font-size: 20px;
     font-family: 'Courgette', cursive;
 }
@@ -62,6 +62,5 @@ label{
     display: flex;
     margin: 20px;  
     }
-    
 }
 
