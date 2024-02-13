@@ -23,6 +23,13 @@
         display: flex;
     }
 
+    .lista-links2{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: 15px;
+    }
+
     /*  AYUDA  */
 
     .grid-ayuda-container{
@@ -56,7 +63,7 @@
 
     }*/
     .para-los-parrafos-historia{
-        font-size: 10px;
+        font-size: 15px;
     }
     .subtitulos{
         font-size: 20px;
@@ -69,9 +76,21 @@
         width: 300px;
     }
     .grid-mapa{
-        width: 200px;
+        padding: 20px;
         font-size: 25px;
+        text-align: center;
     }
+
+    .grid-container-mapas{
+        width: 400px;
+        height: 300px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+       }
    
     /*  NOSOTROS  */
     .grid-container-fotos img{
@@ -89,9 +108,7 @@
         }
         
     }
-    .donde-estamos{
-        font-size: 15px;
-    }
+ 
 
     /*  TIENDA  */
     .contenedor-cartas{

@@ -7,15 +7,18 @@
    display: flex;
    margin: 20px;
    }
+
    .texto{
        display: flex;
        flex-flow: wrap;
        font-size: 15px;
 
     }
+
     .lista-links li a{
        font-size: 20px;
     }
+
     .login{
        display: flex; 
        flex-flow: wrap;
@@ -27,42 +30,50 @@
        flex-direction: column;
        align-items: center;
     }
+
     .grid-container img{
 
        display: flex;
        width: 350px;
     }
+
     .grid-uno{
 
        display: flex;
 
    }
+
    .grid-dos{
        display: flex;
 
    }
+
    .login label{
        display: flex;
        text-align: end;
    }
+
    .lista-links{
        display: flex;
        align-items: center;
        justify-content: space-evenly;
        font-size: 5px;
    }
+
    .lista-links2{
        display: flex;
        text-align: center;
        justify-content: space-evenly;
-       font-size: 5px;
+       font-size: 15px;
    }
+
    .copyright1{
        display: flex;
        flex-flow: wrap;
        text-align: center;
        padding: 10px 20px;
    }
+
    /* Esto seria para lo que es ayuda*/
 
    .grid-ayuda-container{
@@ -108,6 +119,8 @@
        flex-flow: wrap;
        font-size: 15px;
    }
+
+
    /*
    .grid-container img{
        display: flex;
@@ -117,18 +130,20 @@
    }
    */
    .grid-container-mapas{
-       display: flex;
-       padding: 20px;
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
    }
-   .grid-container-mapas{
-      width: 300px;
-      display: flex;
-   }
+
    .grid-mapa{
-       display: flex;
        padding: 5px;
        text-align: center;
-       font-size: 15px;
+       font-size: 20px;
 
    }
    /* ESTO SERIA LA PARTE "NOSOTROS"*/

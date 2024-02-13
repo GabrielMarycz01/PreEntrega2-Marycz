@@ -42,6 +42,11 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.lista-links2 a {
+  text-decoration: none;
+  color: #F6F4C2;
+  font-family: "Courgette", cursive;
+}
 
 .login {
   display: flex;
@@ -49,7 +54,7 @@
   margin: 20px;
 }
 
-a {
+.navbar1 a {
   text-decoration: none;
   color: #F6F4C2;
   font-size: 20px;
@@ -211,7 +216,7 @@ label {
   display: grid;
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 10px 0px 10px 15px;
 }
 
 .grid-container-mapas {
@@ -374,7 +379,7 @@ footer {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    font-size: 5px;
+    font-size: 15px;
   }
   .copyright1 {
     display: flex;
@@ -441,20 +446,20 @@ footer {
 }
 */
 .grid-container-mapas {
+  width: 400px;
+  height: 300px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
-  padding: 20px;
-}
-
-.grid-container-mapas {
-  width: 300px;
-  display: flex;
+  align-items: center;
 }
 
 .grid-mapa {
-  display: flex;
   padding: 5px;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 /* ESTO SERIA LA PARTE "NOSOTROS"*/
@@ -528,6 +533,12 @@ footer {
   .grid-dos {
     display: flex;
   }
+  .lista-links2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+  }
   /*  AYUDA  */
   .grid-ayuda-container {
     display: flex;
@@ -558,7 +569,7 @@ footer {
 
       }*/
   .para-los-parrafos-historia {
-    font-size: 10px;
+    font-size: 15px;
   }
   .subtitulos {
     font-size: 20px;
@@ -571,8 +582,19 @@ footer {
     width: 300px;
   }
   .grid-mapa {
-    width: 200px;
+    padding: 20px;
     font-size: 25px;
+    text-align: center;
+  }
+  .grid-container-mapas {
+    width: 400px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
   /*  NOSOTROS  */
   .grid-container-fotos img {
@@ -585,9 +607,6 @@ footer {
   }
   .grid-container .grid-fotos-donde-estamos {
     width: 300px;
-  }
-  .donde-estamos {
-    font-size: 15px;
   }
   /*  TIENDA  */
   .contenedor-cartas {
