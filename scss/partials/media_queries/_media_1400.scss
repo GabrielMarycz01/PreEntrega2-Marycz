@@ -5,11 +5,11 @@
     .grid-container{
         display: flex;
         justify-content: space-around;
-        img{
-        display: flex;
-        align-items: center;
-        width: 600px;
-    }
+
+               img{
+                  @include flex-2 (flex, center);
+                  @include sizes (600px, 337px);
+                  }
     } 
     .grid-uno{
         display: flex;
@@ -18,26 +18,26 @@
         display: flex;
     }
 
+    .lista-links2{
+        font-size: 20px;
+    }
+
     /*  AYUDA  */
 
     .grid-ayuda-container{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
         justify-content: space-around;
 
     }
     .grid-ayuda-container img{
-        display: flex;
-        align-items: center;
-        width: 590px;
+        @include flex-2 (flex, center);
+        @include sizes (590px, 332px); 
     }
     .grid-ayuda1{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
     .grid-ayuda2{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
 
     .h1-de-ayuda{
@@ -64,22 +64,30 @@
         display: flex;
     }
     .grid-mapa{
-        font-size: 25px;
+        font-size: 40px;
+        padding: 10px 0px 50px 0px;
     }
     .grid-container{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
     .grid-container img{
-        display: flex;
-        align-items: center;
-        width: 550px;
+        @include flex-2 (flex, center);
+        @include sizes (600px, 337px);
     }
+
+    .grid-container-mapas{
+        @include sizes (600px, 400px);
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        @include flex-2 (flex, center);
+       }
+
     /*  NOSOTROS  */
     .grid-container-fotos img{
-        display: flex;
-        align-items: center;
-        width: 550px;
+        @include flex-2 (flex, center);
+        @include sizes (550px, 280px);
     }
     .grid-container-fotos{
         font-size: 30px;
@@ -96,7 +104,7 @@
 
     .card img{
         display: flex;
-        width: 200px;
+        @include sizes (250px, 250px);
     }
     .card h5{
         font-size: 30px;
@@ -104,7 +112,13 @@
     .card p{
         font-size: 20px;
     }
-    .card button{
-        font-size: 15px;
+    .card{
+        .btn{
+            font-size: 15px;
+            @include sizes (150px, 130px);
+        }
+        
     }
+
+
 }

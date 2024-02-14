@@ -1,7 +1,7 @@
 /*  Esto es para la pagina principal  */
 .color-pagina{
     background-color: rgb(2, 93, 140);
-    font-family: 'Martel', serif;
+    font-family: $fuente;
     display: flex;
     flex-flow: row wrap;
     display: block;
@@ -38,7 +38,7 @@
     a{
         text-decoration: none;
         color: map-get($colors, amarillito);
-        font-family: 'Courgette', cursive;
+        font-family: $fuente-dos;
     }
 }
 
@@ -52,7 +52,7 @@
     text-decoration: none;
     color: map-get($colors, amarillito);
     font-size: 20px;
-    font-family: 'Courgette', cursive;
+    font-family: $fuente-dos;
 }
 
 }
@@ -61,7 +61,7 @@
 label{
     color: #F6F4C2;
     font-size: 15px;
-    font-family: 'Martel', serif;
+    font-family: $fuente;
 }
 
 .icono{

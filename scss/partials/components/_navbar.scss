@@ -7,21 +7,20 @@
         li{
            a{
     text-decoration: none;
-    color: #F6F4C2;
+    color: $color-letras;
     font-size: 20px;
-    font-family: 'Courgette', cursive;
-    display: flex;
-    text-align: center;
+    font-family: $fuente-dos;
+    @include flex-2 (flex, center);
     justify-content: center;
     text-decoration: none;
     } 
         }
     }
     a{
-        color: #F6F4C2;
+        color: $color-letras;
     }
     
     button{
-        color: #F6F4C2;
+        color: $color-letras;
     }
 }

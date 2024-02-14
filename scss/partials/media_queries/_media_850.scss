@@ -8,9 +8,8 @@
         justify-content: space-around;
         
         img{
-        display: flex;
-        align-items: center;
-        width: 360px;
+            @include flex-2 (flex, center);
+        @include sizes (360px, 202px);
         }
     } 
     .grid-uno{
@@ -20,26 +19,26 @@
         display: flex;
     }
 
+    .lista-links2{
+        font-size: 20px;
+    }
+
     /*  AYUDA  */
 
     .grid-ayuda-container{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
         justify-content: space-around;
 
     }
     .grid-ayuda-container img{
-        display: flex;
-        align-items: center;
-        width: 350px;
+        @include flex-2 (flex, center);
+        @include sizes (350px, 197px);
     }
     .grid-ayuda1{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
     .grid-ayuda2{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
 
     .h1-de-ayuda{
@@ -67,17 +66,25 @@
     }
     .grid-fotos-donde-estamos img{
         display: flex;
-        width: 400px;
+        @include sizes (350px, 202px);
     }
     .grid-mapa{
         font-size: 25px;
     }
+
+    .grid-container-mapas{
+        @include sizes (500px, 300px);
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        @include flex-2 (flex, center);
+       }
    
     /*  NOSOTROS  */
     .grid-container-fotos img{
-        display: flex;
-        align-items: center;
-        width: 460px;
+        @include flex-2 (flex, center);
+        @include sizes (350px, 202px);
     }
     .grid-container-fotos{
         font-size: 25px;
@@ -93,7 +100,7 @@
 
     .card img{
         display: flex;
-        width: 200px;
+        @include sizes (200px, 150px);
     }
     .card h5{
         font-size: 30px;
@@ -101,7 +108,13 @@
     .card p{
         font-size: 20px;
     }
-    .card button{
-        font-size: 15px;
+    .card{
+        .btn{
+            font-size: 15px;
+        @include sizes (90px, 90px);
+        }
+        
     }
+
+
 }

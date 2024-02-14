@@ -6,39 +6,47 @@
         display: flex;
         justify-content: space-around;
 
-        img{
-        display: flex;
-        align-items: center;
-        width: 450px;
+       .grid-uno{
+            display: flex;
+
+            img{
+                align-items: center;
+                @include sizes (490px, 312px);
+
+            }
         }
+        .grid-dos{
+        display: flex;
+
+          img{
+            align-items: center;
+             @include sizes (490px, 312px);
+          }
+        }
+
     } 
-    .grid-uno{
-        display: flex;
-    }
-    .grid-dos{
-        display: flex;
+   
+
+    .lista-links2{
+        font-size: 20px;
     }
 
     /*  AYUDA  */
 
     .grid-ayuda-container{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
         justify-content: space-around;
 
     }
     .grid-ayuda-container img{
-        display: flex;
-        align-items: center;
-        width: 500px;
+        @include flex-2 (flex, center);
+        @include sizes (500px, 281px);
     }
     .grid-ayuda1{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
     .grid-ayuda2{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
 
     .h1-de-ayuda{
@@ -68,22 +76,35 @@
         font-size: 25px;
     }
     .grid-container{
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
         align-items: center;
     }
     .grid-container img{
-        display: flex;
-        align-items: center;
-        width: 550px;
+        @include flex-2 (grid, center);
+        grid-template-columns: 1fr 1fr;
+        @include sizes (490px, 312px);
     }
+
+    .grid-container-mapas{
+        @include sizes (500px, 300px);
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        @include flex-2 (flex, center);
+       }
+
     /*  NOSOTROS  */
     .grid-container-fotos img{
-        display: flex;
-        align-items: center;
-        width: 550px;
+        @include flex-2 (flex, center);
+        @include sizes (430px, 250px);
     }
     .grid-container-fotos{
         font-size: 30px;
+    }
+    .grid-costado-fotos{
+        font-size: 25px;
     }
 
 
@@ -97,7 +118,7 @@
 
     .card img{
         display: flex;
-        width: 200px;
+        @include sizes (250px, 170px);
     }
     .card h5{
         font-size: 30px;
@@ -105,7 +126,13 @@
     .card p{
         font-size: 20px;
     }
-    .card button{
-        font-size: 15px;
+    .card{
+        .btn{
+            font-size: 15px;
+            @include sizes (100px, 100px);
+        }
+        
     }
+
+
 }

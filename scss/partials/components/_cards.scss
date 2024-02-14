@@ -6,12 +6,11 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
-    font-family: 'Martel', serif;
+    font-family: $fuente;
 }
 
 .card{
-    display: flex;
-    align-items: center;
+    @include flex-2 (flex, center);
     background-color: azure;
  }
 
@@ -22,9 +21,8 @@
 }
 
 .imagen-tienda{
-    align-items: center;
+    @include flex-2 (flex, center);
     border: 3px solid black;
-    display: flex;
     flex-wrap: wrap;
 
 }
@@ -47,7 +45,7 @@
 }
 
 .precio{
-    font-family: 'Martel', serif;
+    font-family: $fuente;
     font-size: 40px;
 }
 

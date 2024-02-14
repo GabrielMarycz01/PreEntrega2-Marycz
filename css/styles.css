@@ -127,12 +127,12 @@ label {
 
 .grid-ayuda-container {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
   width: 100%;
   height: 100%;
-  align-items: center;
 }
 .grid-ayuda-container img {
   width: 900px;
@@ -220,8 +220,8 @@ label {
 
 .grid-container-mapas {
   display: grid;
-  grid-template-columns: auto auto;
   align-items: center;
+  grid-template-columns: auto auto;
 }
 
 .grid-mapa {
@@ -273,9 +273,9 @@ label {
 }
 
 .imagen-tienda {
+  display: flex;
   align-items: center;
   border: 3px solid black;
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -300,6 +300,21 @@ label {
   font-size: 40px;
 }
 
+/* boton de ayuda */
+.container {
+  max-width: 800px;
+  padding: 50px;
+  justify-content: center;
+}
+.container .formulario {
+  justify-content: center;
+  padding: 10px 0px;
+}
+.container .boton-enviar {
+  background-color: black;
+  color: bisque;
+}
+
 /* esto seria la pagina principal */
 footer {
   color: white;
@@ -319,7 +334,7 @@ footer {
   font-size: 20px;
   font-family: "Courgette", cursive;
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
   text-decoration: none;
 }
@@ -334,6 +349,7 @@ footer {
   /* Esto SERIA PARA LA PAGINA PRINCIPAL*/
   .icono img {
     width: 105px;
+    height: 55px;
     display: flex;
     margin: 20px;
   }
@@ -345,18 +361,15 @@ footer {
   .lista-links li a {
     font-size: 20px;
   }
-  .login {
-    display: flex;
-    flex-flow: wrap;
-  }
   .grid-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .grid-container img {
     display: flex;
     width: 330px;
+    height: 185px;
   }
   .grid-uno {
     display: flex;
@@ -389,53 +402,46 @@ footer {
   /* Esto seria para lo que es ayuda*/
   .grid-ayuda-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .grid-ayuda-container img {
     display: flex;
     align-items: center;
     width: 360px;
+    height: 203px;
+  }
+  .grid-ayuda1 {
+    display: flex;
+  }
+  .grid-ayuda2 {
+    display: flex;
+  }
+  .h1-de-ayuda {
+    font-size: 25px;
+  }
+  .parrafo-ayuda {
+    font-size: 15px;
+    text-align: center;
+  }
+  .frase {
+    font-size: 20px;
+  }
+  /* ESTO SERIA DONDE ESTAMOS*/
+  .para-los-parrafos-historia {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  .subtitulos {
+    font-size: 20px;
+  }
+  .donde-estamos {
+    display: flex;
+    flex-flow: wrap;
+    font-size: 15px;
   }
 }
-.grid-ayuda1 {
-  display: flex;
-}
-
-.grid-ayuda2 {
-  display: flex;
-}
-
-.h1-de-ayuda {
-  font-size: 25px;
-}
-
-.parrafo-ayuda {
-  font-size: 15px;
-  text-align: center;
-}
-
-.frase {
-  font-size: 20px;
-}
-
-/* ESTO SERIA DONDE ESTAMOS*/
-.para-los-parrafos-historia {
-  display: flex;
-  align-items: center;
-  font-size: 15px;
-}
-
-.subtitulos {
-  font-size: 20px;
-}
-
-.donde-estamos {
-  display: flex;
-  flex-flow: wrap;
-  font-size: 15px;
-}
-
 /*
 .grid-container img{
     display: flex;
@@ -470,6 +476,7 @@ footer {
 
 .grid-container-fotos img {
   width: 350px;
+  height: 220px;
 }
 
 .grid-costado-fotos {
@@ -502,9 +509,10 @@ footer {
   font-size: 20px;
 }
 
-.info-producto button {
-  height: 70px;
-  width: 100px;
+.info-producto .btn {
+  width: 70px;
+  height: 100px;
+  font-size: 10px;
 }
 
 .info-producto .precio {
@@ -514,6 +522,10 @@ footer {
 
 @media (min-width: 501px) and (max-width: 600px) {
   /*  INDEX  */
+  .icono img {
+    width: 145px;
+    height: 75px;
+  }
   .login {
     font-size: 10px;
   }
@@ -524,7 +536,9 @@ footer {
     display: flex;
     align-items: center;
     width: 250px;
+    height: 135px;
     justify-content: space-around;
+    padding: 0px 0px 0px 10px;
   }
   .grid-uno {
     display: flex;
@@ -548,6 +562,7 @@ footer {
     display: flex;
     align-items: center;
     width: 270px;
+    height: 152px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -576,10 +591,6 @@ footer {
   .donde-estamos {
     font-size: 15px;
   }
-  .grid-fotos-donde-estamos {
-    display: flex;
-    width: 300px;
-  }
   .grid-mapa {
     padding: 20px;
     font-size: 25px;
@@ -600,12 +611,10 @@ footer {
     display: flex;
     align-items: center;
     width: 300px;
+    height: 210px;
   }
   .grid-container-fotos {
     font-size: 25px;
-  }
-  .grid-container .grid-fotos-donde-estamos {
-    width: 300px;
   }
   /*  TIENDA  */
   .contenedor-cartas {
@@ -616,6 +625,7 @@ footer {
   .card img {
     display: flex;
     width: 160px;
+    height: 130px;
   }
   .card h5 {
     font-size: 30px;
@@ -643,7 +653,8 @@ footer {
   .grid-container img {
     display: flex;
     align-items: center;
-    width: 270px;
+    width: 350px;
+    height: 197px;
   }
   .grid-uno {
     display: flex;
@@ -652,6 +663,9 @@ footer {
   .grid-dos {
     display: flex;
     align-items: center;
+  }
+  .lista-links2 {
+    font-size: 20px;
   }
   /*  AYUDA  */
   .grid-ayuda-container {
@@ -663,6 +677,7 @@ footer {
     display: flex;
     align-items: center;
     width: 300px;
+    height: 169px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -689,7 +704,10 @@ footer {
   }
   .grid-fotos-donde-estamos {
     display: flex;
-    width: 350px;
+  }
+  .grid-fotos-donde-estamos img {
+    width: 330px;
+    height: 210px;
   }
   .grid-mapa {
     font-size: 25px;
@@ -698,10 +716,21 @@ footer {
   .grid-container-fotos img {
     display: flex;
     align-items: center;
-    width: 350px;
+    width: 330px;
+    height: 220px;
   }
   .grid-container-fotos {
     font-size: 25px;
+  }
+  .grid-container-mapas {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
   /*  TIENDA  */
   .contenedor-cartas {
@@ -711,7 +740,8 @@ footer {
   }
   .card img {
     display: flex;
-    width: 160px;
+    width: 180px;
+    height: 150px;
   }
   .card h5 {
     font-size: 30px;
@@ -719,8 +749,10 @@ footer {
   .card p {
     font-size: 20px;
   }
-  .card button {
-    font-size: 15px;
+  .card .btn {
+    width: 90px;
+    height: 90px;
+    font-size: 10px;
   }
 }
 @media (min-width: 769px) and (max-width: 850px) {
@@ -735,12 +767,16 @@ footer {
     display: flex;
     align-items: center;
     width: 360px;
+    height: 202px;
   }
   .grid-uno {
     display: flex;
   }
   .grid-dos {
     display: flex;
+  }
+  .lista-links2 {
+    font-size: 20px;
   }
   /*  AYUDA  */
   .grid-ayuda-container {
@@ -752,6 +788,123 @@ footer {
     display: flex;
     align-items: center;
     width: 350px;
+    height: 197px;
+  }
+  .grid-ayuda1 {
+    display: flex;
+    align-items: center;
+  }
+  .grid-ayuda2 {
+    display: flex;
+    align-items: center;
+  }
+  .h1-de-ayuda {
+    font-size: 30px;
+  }
+  .parrafo-ayuda {
+    font-size: 15px;
+  }
+  .frase {
+    font-size: 30px;
+  }
+  /*  DONDE ESTAMOS  */
+  .para-los-parrafos-historia {
+    font-size: 15px;
+  }
+  .subtitulos {
+    font-size: 20px;
+  }
+  .donde-estamos {
+    font-size: 15px;
+  }
+  .grid-fotos-donde-estamos {
+    display: flex;
+  }
+  .grid-fotos-donde-estamos img {
+    display: flex;
+    width: 350px;
+    height: 202px;
+  }
+  .grid-mapa {
+    font-size: 25px;
+  }
+  .grid-container-mapas {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  /*  NOSOTROS  */
+  .grid-container-fotos img {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    height: 202px;
+  }
+  .grid-container-fotos {
+    font-size: 25px;
+  }
+  /*  TIENDA  */
+  .contenedor-cartas {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card img {
+    display: flex;
+    width: 200px;
+    height: 150px;
+  }
+  .card h5 {
+    font-size: 30px;
+  }
+  .card p {
+    font-size: 20px;
+  }
+  .card .btn {
+    font-size: 15px;
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (min-width: 851px) and (max-width: 1023px) {
+  .texto {
+    font-size: 20px;
+  }
+  .grid-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .grid-container img {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 202px;
+  }
+  .grid-uno {
+    display: flex;
+  }
+  .grid-dos {
+    display: flex;
+  }
+  .lista-links2 {
+    font-size: 20px;
+  }
+  /*  AYUDA  */
+  .grid-ayuda-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .grid-ayuda-container img {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 253px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -786,15 +939,27 @@ footer {
   .grid-fotos-donde-estamos img {
     display: flex;
     width: 400px;
+    height: 230px;
   }
   .grid-mapa {
     font-size: 25px;
+  }
+  .grid-container-mapas {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
   /*  NOSOTROS  */
   .grid-container-fotos img {
     display: flex;
     align-items: center;
-    width: 460px;
+    width: 400px;
+    height: 230px;
   }
   .grid-container-fotos {
     font-size: 25px;
@@ -808,6 +973,7 @@ footer {
   .card img {
     display: flex;
     width: 200px;
+    height: 150px;
   }
   .card h5 {
     font-size: 30px;
@@ -815,103 +981,9 @@ footer {
   .card p {
     font-size: 20px;
   }
-  .card button {
-    font-size: 15px;
-  }
-}
-@media (min-width: 851px) and (max-width: 1023px) {
-  .texto {
-    font-size: 20px;
-  }
-  .grid-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  .grid-container img {
-    display: flex;
-    align-items: center;
-    width: 360px;
-  }
-  .grid-uno {
-    display: flex;
-  }
-  .grid-dos {
-    display: flex;
-  }
-  /*  AYUDA  */
-  .grid-ayuda-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .grid-ayuda-container img {
-    display: flex;
-    align-items: center;
-    width: 450px;
-  }
-  .grid-ayuda1 {
-    display: flex;
-    align-items: center;
-  }
-  .grid-ayuda2 {
-    display: flex;
-    align-items: center;
-  }
-  .h1-de-ayuda {
-    font-size: 30px;
-  }
-  .parrafo-ayuda {
-    font-size: 15px;
-  }
-  .frase {
-    font-size: 30px;
-  }
-  /*  DONDE ESTAMOS  */
-  .para-los-parrafos-historia {
-    font-size: 15px;
-  }
-  .subtitulos {
-    font-size: 20px;
-  }
-  .donde-estamos {
-    font-size: 15px;
-  }
-  .grid-fotos-donde-estamos {
-    display: flex;
-  }
-  .grid-fotos-donde-estamos img {
-    display: flex;
-    width: 460px;
-  }
-  .grid-mapa {
-    font-size: 25px;
-  }
-  /*  NOSOTROS  */
-  .grid-container-fotos img {
-    display: flex;
-    align-items: center;
-    width: 460px;
-  }
-  .grid-container-fotos {
-    font-size: 25px;
-  }
-  /*  TIENDA  */
-  .contenedor-cartas {
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .card img {
-    display: flex;
-    width: 200px;
-  }
-  .card h5 {
-    font-size: 30px;
-  }
-  .card p {
-    font-size: 20px;
-  }
-  .card button {
+  .card .btn {
+    width: 90px;
+    height: 90px;
     font-size: 15px;
   }
 }
@@ -923,16 +995,24 @@ footer {
     display: flex;
     justify-content: space-around;
   }
-  .grid-container img {
+  .grid-container .grid-uno {
     display: flex;
+  }
+  .grid-container .grid-uno img {
     align-items: center;
-    width: 450px;
+    width: 490px;
+    height: 312px;
   }
-  .grid-uno {
+  .grid-container .grid-dos {
     display: flex;
   }
-  .grid-dos {
-    display: flex;
+  .grid-container .grid-dos img {
+    align-items: center;
+    width: 490px;
+    height: 312px;
+  }
+  .lista-links2 {
+    font-size: 20px;
   }
   /*  AYUDA  */
   .grid-ayuda-container {
@@ -944,6 +1024,7 @@ footer {
     display: flex;
     align-items: center;
     width: 500px;
+    height: 281px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -979,22 +1060,39 @@ footer {
     font-size: 25px;
   }
   .grid-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
   }
   .grid-container img {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 490px;
+    height: 312px;
+  }
+  .grid-container-mapas {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    width: 550px;
   }
   /*  NOSOTROS  */
   .grid-container-fotos img {
     display: flex;
     align-items: center;
-    width: 550px;
+    width: 430px;
+    height: 250px;
   }
   .grid-container-fotos {
     font-size: 30px;
+  }
+  .grid-costado-fotos {
+    font-size: 25px;
   }
   /*  TIENDA  */
   .contenedor-cartas {
@@ -1004,7 +1102,8 @@ footer {
   }
   .card img {
     display: flex;
-    width: 200px;
+    width: 250px;
+    height: 170px;
   }
   .card h5 {
     font-size: 30px;
@@ -1012,8 +1111,10 @@ footer {
   .card p {
     font-size: 20px;
   }
-  .card button {
+  .card .btn {
     font-size: 15px;
+    width: 100px;
+    height: 100px;
   }
 }
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -1028,12 +1129,16 @@ footer {
     display: flex;
     align-items: center;
     width: 600px;
+    height: 337px;
   }
   .grid-uno {
     display: flex;
   }
   .grid-dos {
     display: flex;
+  }
+  .lista-links2 {
+    font-size: 20px;
   }
   /*  AYUDA  */
   .grid-ayuda-container {
@@ -1045,6 +1150,7 @@ footer {
     display: flex;
     align-items: center;
     width: 590px;
+    height: 332px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -1077,7 +1183,8 @@ footer {
     display: flex;
   }
   .grid-mapa {
-    font-size: 25px;
+    font-size: 40px;
+    padding: 10px 0px 50px 0px;
   }
   .grid-container {
     display: flex;
@@ -1086,13 +1193,25 @@ footer {
   .grid-container img {
     display: flex;
     align-items: center;
-    width: 550px;
+    width: 600px;
+    height: 337px;
+  }
+  .grid-container-mapas {
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
   /*  NOSOTROS  */
   .grid-container-fotos img {
     display: flex;
     align-items: center;
     width: 550px;
+    height: 280px;
   }
   .grid-container-fotos {
     font-size: 30px;
@@ -1105,7 +1224,8 @@ footer {
   }
   .card img {
     display: flex;
-    width: 200px;
+    width: 250px;
+    height: 250px;
   }
   .card h5 {
     font-size: 30px;
@@ -1113,16 +1233,25 @@ footer {
   .card p {
     font-size: 20px;
   }
-  .card button {
+  .card .btn {
     font-size: 15px;
+    width: 150px;
+    height: 130px;
   }
 }
 @media (min-width: 1401px) and (max-width: 1600px) {
+  .navbar1 a {
+    font-size: 25px;
+  }
+  .navbar1 ul li a {
+    font-size: 25px;
+  }
   .texto {
     font-size: 30px;
   }
   .grid-container img {
-    width: 800px;
+    width: 680px;
+    height: 400px;
   }
   .grid-container {
     display: flex;
@@ -1138,6 +1267,9 @@ footer {
   .grid-dos {
     display: flex;
   }
+  .lista-links2 {
+    font-size: 25px;
+  }
   /*  AYUDA  */
   .grid-ayuda-container {
     display: flex;
@@ -1148,6 +1280,7 @@ footer {
     display: flex;
     align-items: center;
     width: 650px;
+    height: 365px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -1159,6 +1292,7 @@ footer {
   }
   .h1-de-ayuda {
     font-size: 35px;
+    padding: 10px 0px 50px 0px;
   }
   .parrafo-ayuda {
     font-size: 25px;
@@ -1174,13 +1308,15 @@ footer {
     font-size: 50px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 25px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
   }
   .grid-mapa {
-    font-size: 25px;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 0px 50px 0px;
   }
   .grid-container {
     display: flex;
@@ -1189,17 +1325,31 @@ footer {
   .grid-container img {
     display: flex;
     align-items: center;
-    width: 750px;
+    width: 680px;
+    height: 400px;
+  }
+  .grid-container-mapas {
+    width: 600px;
+    height: 450px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
   }
   /*  NOSOTROS  */
   .grid-container-fotos img {
     display: flex;
     align-items: center;
     width: 550px;
+    height: 300px;
   }
   .grid-container-fotos {
     display: flex;
     font-size: 30px;
+  }
+  .grid-costado-fotos {
+    font-size: 25px;
   }
   /*  TIENDA  */
   .contenedor-cartas {
@@ -1225,7 +1375,8 @@ footer {
     justify-content: center;
   }
   .card button {
-    width: 200px;
+    width: 180px;
+    height: 120px;
     font-size: 20px;
     justify-content: center;
   }
@@ -1239,16 +1390,20 @@ footer {
     display: flex;
     justify-content: space-around;
   }
-  .grid-container img {
-    display: flex;
-    align-items: center;
-    width: 600px;
-  }
   .grid-uno {
     display: flex;
   }
   .grid-dos {
     display: flex;
+  }
+  .lista-links2 {
+    font-size: 25px;
+  }
+  .navbar1 a {
+    font-size: 25px;
+  }
+  .navbar1 ul li a {
+    font-size: 25px;
   }
   /*  AYUDA  */
   .grid-ayuda-container {
@@ -1260,6 +1415,7 @@ footer {
     display: flex;
     align-items: center;
     width: 800px;
+    height: 450px;
   }
   .grid-ayuda1 {
     display: flex;
@@ -1271,28 +1427,32 @@ footer {
   }
   .h1-de-ayuda {
     font-size: 55px;
+    padding: 50px;
   }
   .parrafo-ayuda {
     font-size: 35px;
+    text-align: center;
   }
   .frase {
     font-size: 45px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 25px;
+    font-size: 35px;
   }
   .subtitulos {
     font-size: 50px;
+    padding: 50px 0px 0px 0px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 35px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
   }
   .grid-mapa {
-    font-size: 25px;
+    font-size: 40px;
+    padding: 0px 0px 50px 0px;
   }
   .grid-container {
     display: flex;
@@ -1301,17 +1461,31 @@ footer {
   .grid-container img {
     display: flex;
     align-items: center;
-    width: 850px;
+    width: 750px;
+    height: 480px;
+  }
+  .grid-container-mapas {
+    width: 600px;
+    height: 450px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
   }
   /*  NOSOTROS  */
   .grid-container-fotos img {
     display: flex;
     align-items: center;
-    width: 550px;
+    width: 750px;
+    height: 480px;
   }
   .grid-container-fotos {
     display: flex;
     font-size: 30px;
+  }
+  .grid-costado-fotos {
+    font-size: 50px;
   }
   /*  TIENDA  */
   .contenedor-cartas {
@@ -1321,7 +1495,7 @@ footer {
   }
   .card img {
     display: flex;
-    width: 300px;
+    width: 500px;
     height: 300px;
   }
   .card h5 {
@@ -1330,8 +1504,19 @@ footer {
   .card p {
     font-size: 20px;
   }
-  .card button {
+  .card .btn {
     font-size: 15px;
+    width: 200px;
+    height: 110px;
+  }
+  .header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+  }
+  .bigicon {
+    font-size: 35px;
+    color: #36A0FF;
   }
 }
 

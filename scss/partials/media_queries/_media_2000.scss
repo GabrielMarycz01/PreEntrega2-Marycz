@@ -1,16 +1,11 @@
 @media (min-width: 1601px) and (max-width: 2000px){
     .texto{
         padding: 20px;
-        font-size: 35px;
+        font-size: $main-size;
     }
     .grid-container{
         display: flex;
         justify-content: space-around;
-        img{
-        display: flex;
-        align-items: center;
-        width: 600px;
-    }
     } 
     .grid-uno{
         display: flex;
@@ -18,34 +13,47 @@
     .grid-dos{
         display: flex;
     }
+    .lista-links2{
+        font-size: 25px;
+    }
+    .navbar1{
+        a{
+            font-size: 25px;
+        }
+        ul{
+            li{
+                a{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
 
     /*  AYUDA  */
 
     .grid-ayuda-container{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
         justify-content: space-around;
 
     }
     .grid-ayuda-container img{
-        display: flex;
-        align-items: center;
-        width: 800px;
+        @include flex-2 (flex, center);
+        @include sizes (800px, 450px);
     }
     .grid-ayuda1{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
     .grid-ayuda2{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
 
     .h1-de-ayuda{
         font-size: 55px;
+        padding: 50px;
     }
     .parrafo-ayuda{
-        font-size: 35px;
+        font-size: $main-size;
+        text-align: center;
     }
     .frase{
         font-size: 45px;
@@ -53,38 +61,50 @@
 
     /*  DONDE ESTAMOS  */
     .para-los-parrafos-historia{
-        font-size: 25px;
+        font-size: $main-size;
     }
     .subtitulos{
         font-size: 50px;
+        padding: 50px 0px 0px 0px;
     }
     .donde-estamos{
-        font-size: 15px;
+        font-size: $main-size;
     }
     .grid-fotos-donde-estamos{
         display: flex;
     }
     .grid-mapa{
-        font-size: 25px;
+        font-size: 40px;
+        padding: 0px 0px 50px 0px;
     }
     .grid-container{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
     .grid-container img{
-        display: flex;
-        align-items: center;
-        width: 850px;
+        @include flex-2 (flex, center);
+        @include sizes (750px, 480px);
     }
+
+    .grid-container-mapas{
+        @include sizes (600px, 450px);
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+    }
+
     /*  NOSOTROS  */
     .grid-container-fotos img{
-        display: flex;
-        align-items: center;
-        width: 550px;
+        @include flex-2 (flex, center);
+        @include sizes (750px, 480px);
     }
     .grid-container-fotos{
         display: flex;
         font-size: 30px;
+    }
+    .grid-costado-fotos{
+        font-size: 50px;
     }
 
 
@@ -98,8 +118,7 @@
 
     .card img{
         display: flex;
-        width: 300px;
-        height: 300px;
+        @include sizes (500px, 300px);
     }
     .card h5{
         font-size: 30px;
@@ -107,7 +126,27 @@
     .card p{
         font-size: 20px;
     }
-    .card button{
-        font-size: 15px;
+    .card{
+        .btn{
+            font-size: 15px;
+            @include sizes (200px, 110px);
+        }
+        
     }
+
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+    
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+
+    
+  
+
+
 }

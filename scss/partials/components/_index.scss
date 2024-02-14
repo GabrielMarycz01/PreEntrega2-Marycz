@@ -1,7 +1,7 @@
 /* esto seria la pagina principal */
 .texto{
-    font-family: 'Martel', serif;
-    color: #F6F4C2;
+    font-family: $fuente;
+    color: $color-letras;
     font-size: 45px;
     text-align: center;
 }
@@ -28,34 +28,33 @@
     /* esto seria la pagina AYUDA */
 
     .h1-de-ayuda{
-        color: #F6F4C2;
+        color: $color-letras;
         font-size: 50px;
         text-align: center;
-        font-family: 'Martel', serif;
+        font-family: $fuente;
         text-decoration: underline;
     }
     .parrafo-ayuda{
-        color: #F6F4C2;
-        font-family: 'Martel', serif;
+        color: $color-letras;
+        font-family: $fuente;
         font-size: 30px;
     }
     
     .frase{
         text-align: center;
         font-size: 50px;
-        font-family: 'Martel', serif;
-        color: #F6F4C2;
+        font-family: $fuente;
+        color: $color-letras;
         text-decoration: underline;
     }
 
     .grid-ayuda-container{
-        display: grid;
+        @include flex-2 (grid, center);
         grid-template-columns: 1fr 1fr;
         row-gap: 10px;
         column-gap: 10px;
         width: 100%;
         height: 100%;
-        align-items: center;
     
         img{
             width: 900px;
@@ -87,18 +86,18 @@
       /* esto seria la seccion Nosotros */ 
 
       .para-los-parrafos-historia{
-        color: #F6F4C2;
+        color: $color-letras;
         font-size: 25px;
         text-align: center;
-        font-family: 'Martel', serif;
+        font-family: $fuente;
         display: flex;
     }
 
     .grid-container-fotos{
-        color: #F6F4C2;
+        color: $color-letras;
         font-size: 30px;
         text-align: right;
-        font-family: 'Martel', serif;
+        font-family: $fuente;
         display: grid;
         grid-template-columns: auto auto;
         row-gap: 10px;
@@ -109,15 +108,14 @@
     }
 
     .grid-costado-fotos{
-        display: flex;
-        align-items: center;
+        @include flex-2 (flex, center);
     }
 /* chequear */
     .parrafo-fotos{
-        color: #F6F4C2;
+        color: $color-letras;
         font-size: 30px;
         text-align: right;
-        font-family: 'Martel', serif;
+        font-family: $fuente;
         display: flex;
     }
 
@@ -128,16 +126,16 @@
 }
 
 .subtitulos{
-    color: #F6F4C2;
+    color: $color-letras;
     font-size: 30px;
-    font-family: 'Martel', serif;
+    font-family: $fuente;
     text-align: left;
 }
 
 .donde-estamos{
-    color: #F6F4C2;
+    color: $color-letras;
     font-size: 25px;
-    font-family: 'Martel', serif;
+    font-family: $fuente;
 }
 
 .grid-fotos-donde-estamos{
@@ -148,18 +146,16 @@
 }
 
 .grid-container-mapas{
-    display: grid;
+    @include flex-2 (grid, center);
     grid-template-columns: auto auto;
-    align-items: center;
    
    }
 
    .grid-mapa{
-    display: grid;
-    align-items: flex-end;
-    color: #F6F4C2;
+    @include flex-2 (grid, flex-end);
+    color: $color-letras;
     font-size: 30px;
-    font-family: 'Martel', serif;
+    font-family: $fuente;
     text-align: baseline;
 }
 
@@ -171,10 +167,10 @@
     }
 }
 .titulo-tienda1{
-    color: #F6F4C2;
+    color: $color-letras;
         font-size: 50px;
         text-align: center;
-        font-family: 'Martel', serif;
+        font-family: $fuente;
         text-decoration: underline;
 }
 

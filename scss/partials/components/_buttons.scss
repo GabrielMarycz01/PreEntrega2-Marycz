@@ -1,0 +1,15 @@
+
+/* boton de ayuda */
+.container{
+    max-width: 800px;
+    padding: 50px;
+    justify-content: center;
+    .formulario{
+        justify-content: center;
+        padding: 10px 0px;
+    }
+    .boton-enviar{
+        background-color: black;
+        color: bisque;
+    }
+}
