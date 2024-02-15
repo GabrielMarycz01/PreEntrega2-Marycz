@@ -114,7 +114,6 @@ label {
 .parrafo-ayuda {
   color: #F6F4C2;
   font-family: "Martel", serif;
-  font-size: 30px;
 }
 
 .frase {
@@ -250,6 +249,17 @@ label {
   font-size: 25px;
 }
 
+.ala-avion {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.acordeon p {
+  font-family: "Martel", serif;
+}
+
 /* esto seria pagina de SHOP */
 .contenedor-cartas {
   display: flex;
@@ -354,9 +364,9 @@ footer {
     margin: 20px;
   }
   .texto {
-    display: flex;
     flex-flow: wrap;
     font-size: 15px;
+    text-align: center;
   }
   .lista-links li a {
     font-size: 20px;
@@ -520,6 +530,13 @@ footer {
   text-align: center;
 }
 
+.ala-avion {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 501px) and (max-width: 600px) {
   /*  INDEX  */
   .icono img {
@@ -572,7 +589,10 @@ footer {
     font-size: 35px;
   }
   .parrafo-ayuda {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  .parrafo-ayuda h2 {
+    font-size: 20px;
   }
   .frase {
     font-size: 30px;
@@ -583,13 +603,13 @@ footer {
 
       }*/
   .para-los-parrafos-historia {
-    font-size: 15px;
-  }
-  .subtitulos {
     font-size: 20px;
   }
+  .subtitulos {
+    font-size: 25px;
+  }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 20px;
   }
   .grid-mapa {
     padding: 20px;
@@ -687,20 +707,20 @@ footer {
     font-size: 35px;
   }
   .parrafo-ayuda {
-    font-size: 25px;
+    font-size: 22px;
   }
   .frase {
     font-size: 30px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 15px;
+    font-size: 22px;
   }
   .subtitulos {
-    font-size: 20px;
+    font-size: 25px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 22px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
@@ -757,7 +777,7 @@ footer {
 }
 @media (min-width: 769px) and (max-width: 850px) {
   .texto {
-    font-size: 20px;
+    font-size: 23px;
   }
   .grid-container {
     display: flex;
@@ -800,22 +820,23 @@ footer {
   }
   .h1-de-ayuda {
     font-size: 30px;
+    padding: 30px;
   }
   .parrafo-ayuda {
-    font-size: 15px;
+    font-size: 23px;
   }
   .frase {
     font-size: 30px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 15px;
+    font-size: 23px;
   }
   .subtitulos {
-    font-size: 20px;
+    font-size: 25px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 23px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
@@ -873,7 +894,7 @@ footer {
 }
 @media (min-width: 851px) and (max-width: 1023px) {
   .texto {
-    font-size: 20px;
+    font-size: 23px;
   }
   .grid-container {
     display: flex;
@@ -918,20 +939,20 @@ footer {
     font-size: 30px;
   }
   .parrafo-ayuda {
-    font-size: 15px;
+    font-size: 23px;
   }
   .frase {
     font-size: 30px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 15px;
+    font-size: 23px;
   }
   .subtitulos {
-    font-size: 20px;
+    font-size: 25px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 23px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
@@ -1038,20 +1059,20 @@ footer {
     font-size: 35px;
   }
   .parrafo-ayuda {
-    font-size: 25px;
+    font-size: 30px;
   }
   .frase {
     font-size: 35px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 25px;
+    font-size: 30px;
   }
   .subtitulos {
     font-size: 50px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 30px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
@@ -1164,20 +1185,20 @@ footer {
     font-size: 35px;
   }
   .parrafo-ayuda {
-    font-size: 25px;
+    font-size: 30px;
   }
   .frase {
     font-size: 35px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 25px;
+    font-size: 30px;
   }
   .subtitulos {
     font-size: 50px;
   }
   .donde-estamos {
-    font-size: 15px;
+    font-size: 30px;
   }
   .grid-fotos-donde-estamos {
     display: flex;
@@ -1295,20 +1316,20 @@ footer {
     padding: 10px 0px 50px 0px;
   }
   .parrafo-ayuda {
-    font-size: 25px;
+    font-size: 30px;
   }
   .frase {
     font-size: 35px;
   }
   /*  DONDE ESTAMOS  */
   .para-los-parrafos-historia {
-    font-size: 25px;
+    font-size: 30px;
   }
   .subtitulos {
     font-size: 50px;
   }
   .donde-estamos {
-    font-size: 25px;
+    font-size: 30px;
   }
   .grid-fotos-donde-estamos {
     display: flex;

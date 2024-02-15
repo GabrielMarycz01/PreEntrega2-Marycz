@@ -37,7 +37,7 @@
     .parrafo-ayuda{
         color: $color-letras;
         font-family: $fuente;
-        font-size: 30px;
+
     }
     
     .frase{
@@ -176,4 +176,18 @@
 
 .titulo-tienda{
     font-size: 25px;
+}
+
+.ala-avion{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.acordeon{
+    p{
+        font-family: $fuente;
+    }
+    
 }

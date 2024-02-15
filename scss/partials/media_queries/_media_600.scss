@@ -14,7 +14,7 @@
     }
 
     .texto{
-        font-size: 20px;
+        font-size: map-get($font-sizes, 600);
     }
     .grid-container img{
         @include flex-2 (flex, center);
@@ -54,9 +54,14 @@
     .h1-de-ayuda{
         font-size: 35px;
     }
-    .parrafo-ayuda{
-        font-size: 25px;
+
+   .parrafo-ayuda{
+    font-size: map-get($font-sizes, 600);
+    h2{
+        font-size: map-get($font-sizes, 600);
     }
+   }
+
     .frase{
         font-size: 30px;
     }
@@ -67,13 +72,13 @@
 
     }*/
     .para-los-parrafos-historia{
-        font-size: 15px;
+        font-size: map-get($font-sizes, 600);
     }
     .subtitulos{
-        font-size: 20px;
+        font-size: 25px;
     }
     .donde-estamos{
-        font-size: 15px;
+        font-size: map-get($font-sizes, 600);
     }
  
     .grid-mapa{

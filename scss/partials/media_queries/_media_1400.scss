@@ -1,6 +1,6 @@
 @media (min-width: 1201px) and (max-width: 1400px){
     .texto{
-        font-size: 30px;
+        font-size: map-get($font-sizes, 1400);
     }
     .grid-container{
         display: flex;
@@ -44,7 +44,7 @@
         font-size: 35px;
     }
     .parrafo-ayuda{
-        font-size: 25px;
+        font-size: map-get($font-sizes, 1400);
     }
     .frase{
         font-size: 35px;
@@ -52,13 +52,13 @@
 
     /*  DONDE ESTAMOS  */
     .para-los-parrafos-historia{
-        font-size: 25px;
+        font-size: map-get($font-sizes, 1400);
     }
     .subtitulos{
         font-size: 50px;
     }
     .donde-estamos{
-        font-size: 15px;
+        font-size: map-get($font-sizes, 1400);
     }
     .grid-fotos-donde-estamos{
         display: flex;

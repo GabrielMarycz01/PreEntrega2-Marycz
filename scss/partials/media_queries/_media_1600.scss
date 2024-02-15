@@ -13,7 +13,7 @@
         }
     }
     .texto{
-        font-size: 30px;
+        font-size: map-get($font-sizes, 1600);
     }
     .grid-container{
         img{
@@ -61,7 +61,7 @@
         padding: 10px 0px 50px 0px;
     }
     .parrafo-ayuda{
-        font-size: 25px;
+        font-size: map-get($font-sizes, 1600);
     }
     .frase{
         font-size: 35px;
@@ -69,13 +69,13 @@
 
     /*  DONDE ESTAMOS  */
     .para-los-parrafos-historia{
-        font-size: 25px;
+        font-size: map-get($font-sizes, 1600);
     }
     .subtitulos{
         font-size: 50px;
     }
     .donde-estamos{
-        font-size: 25px;
+        font-size: map-get($font-sizes, 1600);
     }
     .grid-fotos-donde-estamos{
         display: flex;

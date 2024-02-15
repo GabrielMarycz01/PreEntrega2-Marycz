@@ -4,7 +4,7 @@
     /*  INDEX  */
 
     .texto{
-        font-size: 22px;
+        font-size: map-get($font-sizes, 768);
     }
     .grid-container{
         display: flex;
@@ -45,7 +45,7 @@
         font-size: 35px;
     }
     .parrafo-ayuda{
-        font-size: 25px;
+        font-size: map-get($font-sizes, 768);
     }
     .frase{
         font-size: 30px;
@@ -53,13 +53,13 @@
 
     /*  DONDE ESTAMOS  */
     .para-los-parrafos-historia{
-        font-size: 15px;
+        font-size: map-get($font-sizes, 768);
     }
     .subtitulos{
-        font-size: 20px;
+        font-size: 25px;
     }
     .donde-estamos{
-        font-size: 15px;
+        font-size: map-get($font-sizes, 768);
     }
     .grid-fotos-donde-estamos{
         display: flex;
